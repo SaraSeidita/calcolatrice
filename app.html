@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .calculator { 
+            max-width: 400px;
+            width: 100%;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1); /* per dare forma alla calcolatrice, così non appare "piatta" */
+        }
+        .btn {
+            height: 60px;
+            font-size: 1.5rem;
+        }
+        #display {
+            height: 60px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <body class="bg-dark">
+
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="calculator text-center">
+            <h1 class="mb-4">Calcolatrice</h1>
+
+            <input class="form-control mb-3 text-end" type="text" id="display" placeholder="Risultato" readonly>
+
+            <div class="row g-2">
+                <div class="col-3"><button class="btn btn-secondary w-100 number">1</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100 number">2</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100 number">3</button></div>
+                <div class="col-3"><button class="btn btn-dark w-100 operator">+</button></div>
+
+                <div class="col-3"><button class="btn btn-secondary w-100 number">4</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100 number">5</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100 number">6</button></div>
+                <div class="col-3"><button class="btn btn-dark w-100 operator">-</button></div>
+
+                <div class="col-3"><button class="btn btn-secondary w-100 number">7</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100 number">8</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100 number">9</button></div>
+                <div class="col-3"><button class="btn btn-dark w-100 operator">*</button></div>
+
+                <div class="col-3"><button class="btn btn-secondary w-100 number">0</button></div>
+                <div class="col-3"><button class="btn btn-danger w-100 clear">C</button></div>
+                <div class="col-3"><button class="btn btn-success w-100 equals">=</button></div>
+                <div class="col-3"><button class="btn btn-dark w-100 operator">/</button></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./dist/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
